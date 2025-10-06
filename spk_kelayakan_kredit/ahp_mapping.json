@@ -1,0 +1,33 @@
+{
+  "criterion_field_map": {
+    "Usia": "usia",
+    "Pendapatan": "pendapatan",
+    "Pekerjaan": "pekerjaan",
+    "Jaminan": "jaminan"
+  },
+  "pekerjaan_mapping": {
+    "PNS": 4,
+    "Karyawan": 3,
+    "Wiraswasta": 2,
+    "Petani": 2,
+    "Mahasiswa": 1
+  },
+  "jaminan_mapping": {
+    "Sertifikat": 4,
+    "BPKB Mobil": 3,
+    "BPKB Motor": 2,
+    "-": 1
+  },
+  "usia_rules": [
+    {"min": 20, "max": 40, "value": 4},
+    {"min": 41, "max": 55, "value": 3},
+    {"min": 56, "max": 65, "value": 2},
+    {"min": 0, "max": 19, "value": 1}
+  ],
+  "pendapatan_rules": [
+    {"min": 6000000, "max": 999999999, "value": 4},
+    {"min": 4000000, "max": 5999999, "value": 3},
+    {"min": 2000000, "max": 3999999, "value": 2},
+    {"min": 0, "max": 1999999, "value": 1}
+  ]
+}
